@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JoyOut | Diner app</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="mainContainer flex flex_align-center">
+        <img
+          src="./assets/img/joyout-white-icon.svg"
+          alt="Joyout white logo icon"
+          class="joyout-white-logo"
+        />
+      </div>
+    </header>
+
+    <section id="login" class="mainContainer">
+      <img src="./assets/img/login-bg.png" alt="Login Illustration" />
+      <div id="phoneNumber">
+        <h1>Login</h1>
+        <div class="formGroup">
+          <label
+            >Phone number <span class="warning">Invalid number</span>
+          </label>
+          <div class="formField flex">
+            <div class="countryCode">+966</div>
+            <input type="tel" />
+          </div>
+        </div>
+        <div class="flex flex_justify-end">
+          <button class="btn primaryBtn" onclick="sendPhoneNumber()">
+            SEND
+          </button>
+          <!-- Loading Btn -->
+          <!-- <button class="btn primaryBtn loading">loading...</button> -->
+        </div>
+      </div>
+      <div id="otp">
+        <h1>Enter Code</h1>
+        <div class="formGroup">
+          <label>OTP</label>
+          <div class="formField otp_grid">
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+            <input type="text" maxlength="1" />
+          </div>
+        </div>
+        <div class="flex flex_justify-end">
+          <a href="/home.html" class="btn primaryBtn">
+            SUBMIT
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function sendPhoneNumber() {
+        const phoneNumberStep = document.querySelector('#phoneNumber');
+        const otpStep = document.querySelector('#otp');
+        phoneNumberStep.style.display = 'none';
+        otpStep.style.display = 'block';
+      }
+    </script>
+  </body>
+</html>

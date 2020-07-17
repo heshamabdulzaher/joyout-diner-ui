@@ -4,9 +4,79 @@
     <title>JoyOut | Diner app</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    Hello World
+    <!-- Header -->
+    <header>
+      <div class="mainContainer flex flex_align-center">
+        <img
+          src="./assets/img/joyout-white-icon.svg"
+          alt="Joyout white logo icon"
+          class="joyout-white-logo"
+        />
+      </div>
+    </header>
+
+    <!-- Welcome -->
+    <section id="welcomeScreens" class="mainContainer">
+      <div class="screens">
+        <div class="screen active" data-screen-index="1">
+          <img
+            src="./assets/img/welcome/screen1.png"
+            alt="First welcome screen"
+          />
+        </div>
+        <div class="screen" data-screen-index="2">
+          <img
+            src="./assets/img/welcome/screen2.png"
+            alt="First welcome screen"
+          />
+        </div>
+        <div class="screen" data-screen-index="3">
+          <img
+            src="./assets/img/welcome/screen3.png"
+            alt="First welcome screen"
+          />
+        </div>
+      </div>
+      <div class="action flex flex_align-center flex_justify-between">
+        <div class="progressBar" data-screen-index="1"><span></span></div>
+        <button class="btn outlineBtn" onclick="renderNextWelcomeScreen(event)">
+          NEXT
+        </button>
+      </div>
+    </section>
+
+    <script>
+      function renderNextWelcomeScreen() {
+        const activeScreen = document.querySelector('.screen.active');
+        const progressBar = document.querySelector('.progressBar span');
+        const activeIndex = parseInt(
+          activeScreen.getAttribute('data-screen-index')
+        );
+
+        let nextIndex;
+        if (activeIndex < 3) {
+          // Hide current screen
+          activeScreen.classList.remove('active');
+          activeScreen.classList.add('fadeOut');
+          // Show next screen
+          nextIndex = activeIndex + 1;
+          const nextScreen = document.querySelector(
+            `.screen[data-screen-index="${nextIndex}"]`
+          );
+          nextScreen.classList.add('active');
+          // Update progressBar
+          progressBar.style.transform = `translateX(${activeIndex * 30}px)`;
+        } else {
+          window.location.pathname = '/login.html';
+        }
+      }
+    </script>
   </body>
 </html>

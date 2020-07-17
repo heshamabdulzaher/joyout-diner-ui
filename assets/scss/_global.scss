@@ -1,6 +1,12 @@
 $pColor: #f15d5c;
 $sColor: #549dc4;
 $txtColor: #515065;
+$grayColor: #efefef;
+// font weights
+$light: 300;
+$normal: 400;
+$medium: 700;
+$bold: 900;
 
 * {
   box-sizing: border-box;
@@ -9,7 +15,7 @@ $txtColor: #515065;
   border: 0;
   outline: 0;
   max-width: 100%;
-  font-family: 'STCForward', sans-serif, arial;
+  font-family: 'Lato', sans-serif;
 }
 
 html {
@@ -19,20 +25,29 @@ html {
 body {
   background-color: #fff;
   color: $txtColor;
+  font-weight: $normal;
+  padding-bottom: 50px;
 }
 
+header {
+  padding: 12px 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: $bold;
+}
 p {
   line-height: 30px;
 }
 ul {
   list-style-type: none;
 }
-
 input[type='email'],
 input[type='tel'] {
   direction: ltr !important;
 }
-
 a {
   text-decoration: none;
   display: inline-block;
@@ -47,54 +62,31 @@ img {
   max-width: 600px;
   width: 100%;
   margin: auto;
-  padding: 0 20px;
+  padding: 0 14px;
 }
 
 .flex {
   display: flex;
-  &.flex-wrap {
+  &.flex_wrap {
     flex-wrap: wrap;
   }
-  &.flex-dir-col {
+  &.flex_dir-col {
     flex-direction: column;
   }
-  &.flex-center {
+  &.flex_dir-row {
+    flex-direction: row;
+  }
+  &.flex_center {
     align-items: center;
     justify-content: center;
   }
-  &.align-center {
+  &.flex_align-center {
     align-items: center;
   }
-  &.justify-between {
+  &.flex_justify-between {
     justify-content: space-between;
   }
-  &.direction-column {
-    flex-direction: column;
-  }
-}
-.btn {
-  padding: 12px 32px;
-  font-size: 17px;
-  border-radius: 3px;
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.18);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  &.primaryBtn {
-    background-color: $sColor;
-    color: #fff;
-  }
-  &.outlineBtn {
-    color: $sColor;
-    background-color: transparent;
-    border: 2px solid $sColor;
-  }
-  &.fullWidthBtn {
-    width: 100% !important;
-  }
-  &:disabled {
-    background-color: #a8abae;
-    cursor: not-allowed;
+  &.flex_justify-end {
+    justify-content: flex-end;
   }
 }

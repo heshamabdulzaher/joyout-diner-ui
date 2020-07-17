@@ -1,0 +1,45 @@
+.btn {
+  padding: 0 24px;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 3px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff;
+  &.primaryBtn {
+    background-color: $pColor;
+    box-shadow: 2px 3px 2px rgba(241, 93, 92, 0.2);
+  }
+  &.outlineBtn {
+    color: $txtColor;
+    background-color: transparent;
+    border: 2px solid $txtColor;
+  }
+  &.fullWidthBtn {
+    width: 100% !important;
+  }
+  &:disabled {
+    background-color: #a8abae;
+    cursor: not-allowed;
+  }
+  &.loading {
+    background-image: url('../img/bg-loading-btn.png');
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    background-size: contain;
+    pointer-events: none;
+    animation: btnLoading 16s linear infinite;
+  }
+}
+
+@keyframes btnLoading {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1000% 0;
+  }
+}
