@@ -91,19 +91,8 @@ img {
   justify-content: flex-end;
 }
 
-header {
-  background-color: #f8f8f8;
-}
-
-.lorem1 {
-  position: sticky;
-  top: 0;
-  height: 50px;
-}
-
-.lorem3 {
-  position: sticky;
-  top: 50px;
+.page-title {
+  padding: 10px 20px;
 }
 
 .btn {
