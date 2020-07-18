@@ -282,7 +282,7 @@ header {
   align-items: center;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 9;
 }
 .discover-header_top .location img {
   margin-right: 8px;
@@ -344,7 +344,7 @@ header {
   align-items: center;
   position: sticky;
   top: 60px;
-  z-index: 2;
+  z-index: 9;
 }
 .discover-header_tabs ul {
   display: flex;
@@ -417,6 +417,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2;
 }
 .restaurant-card .favourite-icon img {
   width: 26px;
