@@ -26,7 +26,7 @@ body {
   background-color: #fff;
   color: $txtColor;
   font-weight: $normal;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 
 header {
@@ -79,6 +79,12 @@ img {
   &.flex_center {
     align-items: center;
     justify-content: center;
+  }
+  &.flex_align-start {
+    align-items: flex-start;
+  }
+  &.flex_align-end {
+    align-items: flex-end;
   }
   &.flex_align-center {
     align-items: center;

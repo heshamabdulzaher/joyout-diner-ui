@@ -16,7 +16,7 @@ body {
   background-color: #fff;
   color: #515065;
   font-weight: 400;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 
 header {
@@ -74,6 +74,12 @@ img {
 .flex.flex_center {
   align-items: center;
   justify-content: center;
+}
+.flex.flex_align-start {
+  align-items: flex-start;
+}
+.flex.flex_align-end {
+  align-items: flex-end;
 }
 .flex.flex_align-center {
   align-items: center;
@@ -373,6 +379,7 @@ header {
 .restaurant-card {
   position: relative;
   margin-bottom: 24px;
+  width: 100%;
 }
 .restaurant-card .restaurant-cover,
 .restaurant-card .restaurant-content {
@@ -462,6 +469,101 @@ header {
 }
 .navbar a img {
   margin-bottom: 8px;
+}
+
+.restaurant-details_cover {
+  position: relative;
+  margin-bottom: 40px;
+}
+.restaurant-details_cover .cover img {
+  width: 100%;
+}
+.restaurant-details_cover .top-row {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0 40px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  background-image: linear-gradient(to bottom, #13121d 0%, rgba(13, 13, 17, 0) 100%);
+}
+.restaurant-details_cover .top-row .back-arrow {
+  padding: 4px 16px;
+  margin-right: 10px;
+}
+.restaurant-details_cover .top-row .name {
+  margin-bottom: 10px;
+}
+.restaurant-details_cover .top-row .rate {
+  font-size: 13px;
+}
+.restaurant-details_cover .top-row .favourite {
+  padding: 0 10px;
+}
+.restaurant-details_cover .icons {
+  position: absolute;
+  bottom: -28px;
+  padding-left: 20px;
+}
+.restaurant-details_cover .icons img {
+  height: 56px;
+  margin-right: 10px;
+}
+
+.restaurant-details_info .address,
+.restaurant-details_info .opening-hours {
+  display: flex;
+  align-items: flex-start;
+  padding: 8px 14px;
+  color: #8d8c9f;
+}
+.restaurant-details_info .address img,
+.restaurant-details_info .opening-hours img {
+  margin-right: 10px;
+  margin-top: 4px;
+}
+.restaurant-details_info .address span,
+.restaurant-details_info .opening-hours span {
+  letter-spacing: 6px;
+}
+.restaurant-details_info .address span.active,
+.restaurant-details_info .opening-hours span.active {
+  color: #549dc4;
+}
+
+.restaurant-details_offers {
+  padding: 20px;
+}
+.restaurant-details_offers li {
+  border: 1px solid #efefef;
+  padding: 20px 16px;
+  border-radius: 6px;
+  margin-top: 14px;
+}
+.restaurant-details_offers li .discount-icon {
+  margin-top: -15px;
+  margin-right: 6px;
+}
+.restaurant-details_offers li .name {
+  font-size: 18px;
+  color: #f15d5c;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.restaurant-details_offers li button {
+  padding: 0 6px;
+  margin-top: 10px;
+  background-color: transparent;
+  color: #549dc4;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.restaurant-details_offers li button img {
+  margin-left: 14px;
+  width: 6px;
 }
 
 /*# sourceMappingURL=style.css.map */

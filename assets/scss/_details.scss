@@ -1,0 +1,97 @@
+.restaurant-details_cover {
+  position: relative;
+  margin-bottom: 40px;
+  .cover img {
+    width: 100%;
+  }
+  .top-row {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0 40px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    background-image: linear-gradient(
+      to bottom,
+      #13121d 0%,
+      rgba(13, 13, 17, 0) 100%
+    );
+    .back-arrow {
+      padding: 4px 16px;
+      margin-right: 10px;
+    }
+    .name {
+      margin-bottom: 10px;
+    }
+    .rate {
+      font-size: 13px;
+    }
+    .favourite {
+      padding: 0 10px;
+    }
+  }
+  .icons {
+    position: absolute;
+    bottom: -28px;
+    padding-left: 20px;
+    img {
+      height: 56px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.restaurant-details_info {
+  .address,
+  .opening-hours {
+    display: flex;
+    align-items: flex-start;
+    padding: 8px 14px;
+    color: #8d8c9f;
+    img {
+      margin-right: 10px;
+      margin-top: 4px;
+    }
+    span {
+      letter-spacing: 6px;
+      &.active {
+        color: $sColor;
+      }
+    }
+  }
+}
+
+.restaurant-details_offers {
+  padding: 20px;
+  li {
+    border: 1px solid $grayColor;
+    padding: 20px 16px;
+    border-radius: 6px;
+    margin-top: 14px;
+    .discount-icon {
+      margin-top: -15px;
+      margin-right: 6px;
+    }
+    .name {
+      font-size: 18px;
+      color: $pColor;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    button {
+      padding: 0 6px;
+      margin-top: 10px;
+      background-color: transparent;
+      color: $sColor;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      img {
+        margin-left: 14px;
+        width: 6px;
+      }
+    }
+  }
+}
