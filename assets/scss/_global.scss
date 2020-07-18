@@ -27,6 +27,7 @@ body {
   color: $txtColor;
   font-weight: $normal;
   padding-bottom: 50px;
+  height: 3000vh;
 }
 
 header {
@@ -89,4 +90,17 @@ img {
   &.flex_justify-end {
     justify-content: flex-end;
   }
+}
+
+header {
+  background-color: #f8f8f8;
+}
+.lorem1 {
+  position: sticky;
+  top: 0;
+  height: 50px;
+}
+.lorem3 {
+  position: sticky;
+  top: 50px;
 }

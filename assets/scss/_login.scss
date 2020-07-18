@@ -3,18 +3,15 @@
   img {
     transform: translateX(-20px);
   }
-  #phoneNumber {
-    padding: 0 24px;
-    transform: translateY(30px);
-    opacity: 0;
-    animation: fadeInUp 1s ease forwards;
-    display: none;
-  }
+  #phoneNumber,
   #otp {
     padding: 0 24px;
     transform: translateY(30px);
     opacity: 0;
     animation: fadeInUp 1s ease forwards;
+  }
+  #otp {
+    display: none;
   }
   h1 {
     transform: translateY(-30px);

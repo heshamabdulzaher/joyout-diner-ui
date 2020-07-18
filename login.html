@@ -36,11 +36,9 @@
           </div>
         </div>
         <div class="flex flex_justify-end">
-          <button class="btn primaryBtn" onclick="sendPhoneNumber()">
+          <button class="btn primaryBtn" onclick="sendPhoneNumber(event)">
             SEND
           </button>
-          <!-- Loading Btn -->
-          <!-- <button class="btn primaryBtn loading">loading...</button> -->
         </div>
       </div>
       <div id="otp">
@@ -55,7 +53,7 @@
           </div>
         </div>
         <div class="flex flex_justify-end">
-          <a href="/home.html" class="btn primaryBtn">
+          <a href="/discover.html" class="btn primaryBtn">
             SUBMIT
           </a>
         </div>
@@ -63,11 +61,14 @@
     </section>
 
     <script>
-      function sendPhoneNumber() {
+      function sendPhoneNumber(e) {
         const phoneNumberStep = document.querySelector('#phoneNumber');
         const otpStep = document.querySelector('#otp');
-        phoneNumberStep.style.display = 'none';
-        otpStep.style.display = 'block';
+        e.target.classList.add('loading');
+        setTimeout(() => {
+          phoneNumberStep.style.display = 'none';
+          otpStep.style.display = 'block';
+        }, 1500);
       }
     </script>
   </body>
