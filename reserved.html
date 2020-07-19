@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JoyOut | Diner app</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Page title -->
+    <h1 class="page-title">Reserved</h1>
+
+    <div class="reserved-tabs">
+      <div class="tab active">Active</div>
+      <div class="tab">History</div>
+      <div class="active-underline"></div>
+    </div>
+
+    <!-- Restaurants List -->
+    <div class="restaurants-list">
+      <!-- Restaurant card component -->
+      <a href="/details.html" class="restaurant-card">
+        <div class="restaurant-cover">
+          <!-- Cover -->
+          <div class="cover">
+            <img
+              src="./assets/img/restaurant-covers/1.png"
+              alt="Restaurant cover"
+            />
+          </div>
+          <!-- Discount -->
+          <div class="discount">
+            <img
+              src="./assets/img/icons/navbar/discover-active.svg"
+              alt="discover active icon"
+            />
+            <span>30% off</span>
+          </div>
+        </div>
+        <div class="restaurant-content">
+          <div class="flex flex_justify-between">
+            <h2 class="restaurant-name">Baytote Restaurant</h2>
+            <div class="reservation-status confirmed">Confirmed</div>
+          </div>
+          <div class="date-time flex">
+            <img src="./assets/img/icons/calender.svg" alt="calender icon" />
+            <p>12 May 2020</p>
+            <img src="./assets/img/icons/clock.svg" alt="clock icon" />
+            <p>5:30 PM</p>
+          </div>
+        </div>
+      </a>
+      <!-- Restaurant card component -->
+      <a href="/details.html" class="restaurant-card">
+        <div class="restaurant-cover">
+          <!-- Cover -->
+          <div class="cover">
+            <img
+              src="./assets/img/restaurant-covers/2.png"
+              alt="Restaurant cover"
+            />
+          </div>
+          <!-- Discount -->
+          <div class="discount">
+            <img
+              src="./assets/img/icons/navbar/discover-active.svg"
+              alt="discover active icon"
+            />
+            <span>20% off</span>
+          </div>
+        </div>
+        <div class="restaurant-content">
+          <div class="flex flex_justify-between">
+            <h2 class="restaurant-name">Baytote Restaurant</h2>
+            <div class="reservation-status pending">Pending</div>
+          </div>
+          <div class="date-time flex">
+            <img src="./assets/img/icons/calender.svg" alt="calender icon" />
+            <p>12 May 2020</p>
+            <img src="./assets/img/icons/clock.svg" alt="clock icon" />
+            <p>5:30 PM</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="navbar">
+      <ul>
+        <li>
+          <a href="/discover.html">
+            <img
+              src="./assets/img/icons/navbar/discover.svg"
+              alt="Discover icon"
+            />
+            <span>Discover</span>
+          </a>
+        </li>
+        <li>
+          <a href="/favourite.html">
+            <img
+              src="./assets/img/icons/navbar/favourite.svg"
+              alt="Favourite icon"
+            />
+            <span>Favourite</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img
+              src="./assets/img/icons/navbar/reserved-active.svg"
+              alt="Reserved icon"
+            />
+            <span>Reserved</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" disabled>
+            <img src="./assets/img/icons/navbar/more.svg" alt="dots icon" />
+            <span>More</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

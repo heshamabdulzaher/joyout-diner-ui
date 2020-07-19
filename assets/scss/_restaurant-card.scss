@@ -10,11 +10,15 @@
   .restaurant-content {
     position: relative;
   }
+  .restaurant-content {
+    padding: 0 10px;
+  }
   .cover {
     border-radius: 8px;
     height: 120px;
     overflow: hidden;
     position: relative;
+    margin-bottom: 10px;
     img {
       position: absolute;
       top: 50%;
@@ -53,19 +57,18 @@
       width: 26px;
     }
   }
-  .rate {
-    position: absolute;
-    top: 6px;
-    right: 0;
-  }
-  .restaurant-address {
+  p {
     font-size: 14px;
     color: #8d8c9f;
-    padding-left: 10px;
   }
   .restaurant-name {
     font-size: 17px;
-    padding-left: 10px;
     margin-top: -4px;
+  }
+  .reservation-status.confirmed {
+    color: #15a271;
+  }
+  .reservation-status.pending {
+    color: #e8a931;
   }
 }
