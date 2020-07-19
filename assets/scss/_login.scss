@@ -6,7 +6,7 @@
   #phoneNumber,
   #otp {
     padding: 0 24px;
-    transform: translateY(30px);
+    transform: translateY(20px);
     opacity: 0;
     animation: fadeInUp 1s ease forwards;
   }
@@ -21,14 +21,6 @@
 
 .formGroup {
   margin-bottom: 30px;
-  // &.invalid {
-  //   label span {
-  //     display: block;
-  //   }
-  //   input {
-  //     animation: invalidField 1s ease-in forwards;
-  //   }
-  // }
 
   label {
     font-size: 16px;
@@ -76,24 +68,6 @@
     }
   }
 }
-
-// @keyframes invalidField {
-//   0% {
-//     border-color: $pColor;
-//   }
-//   25% {
-//     border-color: $grayColor;
-//   }
-//   50% {
-//     border-color: $pColor;
-//   }
-//   75% {
-//     border-color: $grayColor;
-//   }
-//   100% {
-//     border-color: $pColor;
-//   }
-// }
 
 @keyframes fadeInUp {
   to {
