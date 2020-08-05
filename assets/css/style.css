@@ -23,6 +23,10 @@ header {
   padding: 12px 0;
 }
 
+h1 {
+  font-size: 46px;
+}
+
 h1,
 h2,
 h3 {
@@ -30,7 +34,7 @@ h3 {
 }
 
 p {
-  line-height: 30px;
+  line-height: 1.5;
 }
 
 ul {
@@ -234,7 +238,6 @@ img {
 }
 #login h1 {
   transform: translateY(-30px);
-  font-size: 46px;
 }
 
 .formGroup {
@@ -290,6 +293,25 @@ img {
     opacity: 1;
   }
 }
+#signup {
+  padding-top: 60px;
+}
+#signup h1 {
+  margin-bottom: 20px;
+}
+#signup input[type=checkbox] {
+  width: 28px;
+  height: 28px;
+  margin-right: 12px;
+}
+#signup .accept-terms a {
+  color: #f15d5c;
+  text-decoration: underline;
+}
+#signup .btn {
+  margin-top: 30px;
+}
+
 [class^=discover-header] {
   background-color: #f8f8f8;
   padding-right: 18px;

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JoyOut | Diner app</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="mainContainer flex flex_align-center">
+        <img
+          src="./assets/img/joyout-white-icon.svg"
+          alt="Joyout white logo icon"
+          class="joyout-white-logo"
+        />
+      </div>
+    </header>
+
+    <section id="signup" class="mainContainer">
+      <h1>Sign up</h1>
+      <div class="formGroup">
+        <label>First Name</label>
+        <div class="formField">
+          <input type="text" />
+        </div>
+      </div>
+      <div class="formGroup">
+        <label>Last Name</label>
+        <div class="formField">
+          <input type="text" />
+        </div>
+      </div>
+      <div class="formGroup">
+        <label>Email</label>
+        <div class="formField">
+          <input type="email" />
+        </div>
+      </div>
+      <!-- Agree P&P, T&C -->
+      <div class="flex accept-terms">
+        <input type="checkbox" />
+        <p>
+          I agree with the
+          <a href="#">terms and conditions</a>
+          and the
+          <a href="#">privacy policy</a>
+        </p>
+      </div>
+
+      <div class="flex flex_justify-end">
+        <a href="/discover.html" class="btn primaryBtn">
+          SIGN UP
+        </a>
+      </div>
+    </section>
+  </body>
+</html>
