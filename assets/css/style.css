@@ -475,7 +475,7 @@ img {
 }
 .restaurant-card .restaurant-name {
   font-size: 17px;
-  margin-top: -4px;
+  margin-top: 4px;
 }
 .restaurant-card .reservation-status.confirmed {
   color: #15a271;
@@ -525,6 +525,7 @@ img {
   width: 100%;
   padding: 20px 0 40px;
   display: flex;
+  direction: ltr;
   justify-content: space-between;
   color: #fff;
   background-image: linear-gradient(to bottom, #13121d 0%, rgba(13, 13, 17, 0) 100%);
@@ -718,6 +719,25 @@ img {
     opacity: 1;
     transform: translateY(0);
   }
+}
+body.ar {
+  direction: rtl;
+}
+body.ar #login img {
+  transform: translateX(20px);
+}
+body.ar .formGroup .countryCode {
+  margin-right: 0;
+  margin-left: 10px;
+}
+body.ar #signup input[type=checkbox] {
+  margin-right: 0;
+  margin-left: 12px;
+}
+body.ar .restaurant-details_offers li .book-btn img {
+  transform: rotate(180deg);
+  margin-left: 0;
+  margin-right: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */

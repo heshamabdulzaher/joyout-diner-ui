@@ -1,0 +1,19 @@
+body.ar {
+  direction: rtl;
+  #login img {
+    transform: translateX(20px);
+  }
+  .formGroup .countryCode {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+  #signup input[type='checkbox'] {
+    margin-right: 0;
+    margin-left: 12px;
+  }
+  .restaurant-details_offers li .book-btn img {
+    transform: rotate(180deg);
+    margin-left: 0;
+    margin-right: 14px;
+  }
+}
